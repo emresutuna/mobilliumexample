@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginHorizontal="10dp"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:elevation="10dp"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="220dp">
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="150dp"
+        android:layout_height="130dp"/>
+    <TextView
+        android:id="@+id/productText1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Title"
+        android:textSize="16dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/productText2"
+        android:layout_marginBottom="10dp"
+        android:textColor="#A9A9A9"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="Luna'nın Atölyesi"
+        android:textSize="14dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</LinearLayout>
