@@ -61,6 +61,6 @@ public class DetailActivity extends AppCompatActivity {
             recyclerView.setAdapter(shop2Adapter);
             recyclerView.setLayoutManager(layoutManager);
         }
-Log.d("Test",val);
+
     }
 }

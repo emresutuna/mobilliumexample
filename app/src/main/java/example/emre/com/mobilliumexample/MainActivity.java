@@ -137,14 +137,7 @@ private static final int REQUEST_CODE_SPEECH_INPUT=1000;
         call.enqueue(new Callback<List<Obj>>() {
             @Override
             public void onResponse(Call<List<Obj>> call, Response<List<Obj>> response) {
-                Log.d("Response",new Gson().toJson(response.body().get(0).getFeatured().get(0).getCover().getURL()));
-//                for (int i = 0; i <response.body().get(0).getProducts().size() ; i++) {
-////                    Log.d("Response2",imageUrls[0]);
-////                    Log.d("Title",response.body().get(0).getFeatured().get(i).getTitle());
-//                    Log.d("Products",response.body().get(0).getProducts().get(i).getTitle());
-//
-//                }
-Log.d("Products",new Gson().toJson(response.body().get(5).getShops().get(0).getCover().getURL()));
+
 
                 //Adapter Starts
                 featuredArrayList=response.body().get(0).getFeatured();
@@ -317,7 +310,6 @@ Log.d("Products",new Gson().toJson(response.body().get(5).getShops().get(0).getC
                 SnapHelper helper = new LinearSnapHelper();
                SnapHelper helper2=new LinearSnapHelper();
                snapHelper.attachToRecyclerView(recyclerView);
-//                helper.attachToRecyclerView(recyclerView);
                 snapHelper2  .attachToRecyclerView(recyclerView2);
                 snapHelper3.attachToRecyclerView(recyclerView4);
                 snapHelper4.attachToRecyclerView(recyclerView5);
